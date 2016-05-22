@@ -11,4 +11,6 @@ COPY target/demo-0.0.1-SNAPSHOT.jar /release/spring-boot-demo/demo-0.0.1-SNAPSHO
 RUN cd /apps \
     && ln -s /release/spring-boot-demo/demo-0.0.1-SNAPSHOT.jar spring-boot-demo
 
+EXPOSE 8080
+
 CMD ["java", "-jar", "/apps/spring-boot-demo"]
